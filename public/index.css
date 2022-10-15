@@ -1,0 +1,277 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0f0b0b;
+    font-family: calibri;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid whitesmoke;
+    width: 98%;
+    height: 30px;
+    padding: 10px;
+    margin: auto;
+    background-color: #3da4d0;
+}
+
+.intro{
+    display: flex;
+    justify-content: space-around;
+}
+
+.web-link{
+    text-decoration: none;
+}
+
+.web-title{
+    color: yellow;
+    font-size: 60px;
+}
+
+.main-menu{
+    list-style: none;
+    display: flex;
+}
+
+li{
+    margin-right: 20px;
+    transition: ease-in-out 0.5s;
+}
+
+.link-menu{
+    text-decoration: none;
+    color: yellow;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+li:hover{
+    background-color: #0f0b0b;
+}
+
+/* This is the end pf header */
+.animation{
+    width: 600px;
+    background-color:chocolate;
+    animation-name: welcome;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    transition: all;
+}
+
+@keyframes welcome {
+    0%{transform: translateX(0px);}
+    50%{transform: translateX(650px);}
+    100%{transform: translateX(0px);}
+}
+
+.welcome-animation{
+    color: aliceblue;
+    text-align: center;
+}
+
+.quote-area{
+    width: 600px;
+    height: 300px;
+    background-color: rgb(157, 196, 231, 1);
+    margin: auto;
+    border-radius: 30px;
+    border-top: 10px solid red;
+    border-right: 10px solid blue;
+    border-bottom: 10px solid orangered;
+    border-left: 10px solid green;
+    animation-name: quote;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transition: all;
+}
+
+@keyframes quote {
+    0%{border-top: 10px solid red;
+        border-right: 10px solid blue;
+        border-bottom: 10px solid orangered;
+        border-left: 10px solid green;}
+    20%{border-top: 10px solid green;
+        border-right: 10px solid red;
+        border-bottom: 10px solid blue;
+        border-left: 10px solid orangered;}
+    40%{border-top: 10px solid orangered;
+        border-right: 10px solid green;
+        border-bottom: 10px solid red;
+        border-left: 10px solid blue;}
+    80%{border-top: 10px solid blue;
+        border-right: 10px solid orangered;
+        border-bottom: 10px solid green;
+        border-left: 10px solid red;}
+    100%{border-top: 10px solid red;
+        border-right: 10px solid blue;
+        border-bottom: 10px solid orangered;
+        border-left: 10px solid green;}
+}
+
+.quote-content{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+span{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.arrows{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    animation-name: arrows;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrows {
+    0%{transform: translateX(0);}
+    25%{transform: translateY(30px);}
+    50%{color: black;}
+    100%{transform: translateX(0);}
+}
+
+.arrow-right{
+    color: azure;
+    font-size: 70px;
+    transform:rotate(90deg );
+    color: yellow;
+}
+.arrow-left{
+    color: azure;
+    font-size: 70px;
+    transform:rotate(90deg );
+    color: yellow;
+}
+
+.arrow-center{
+    color: azure;
+    font-size: 70px;
+    transform:rotate(90deg );
+    color: yellow;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 800px;
+    margin: auto;
+}
+
+.card{
+    border: 2px white solid;
+    border-radius: 30px;
+    margin-top: 60px;
+    width: 350px;
+    height: 450px;
+    background-color:cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    transition: ease-in-out 0.5s;
+}
+
+.card:hover{
+    transform: scale(1.04);
+}
+
+.title-link{
+    text-decoration: none;
+    color: #0f0b0b;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.title-link:hover{
+    text-decoration: underline;
+}
+
+.card-img{
+    width: 95%;
+    height: 185px;
+    margin-top: 5px;
+}
+
+.card-content{
+    font-size: 18px;
+}
+
+.button{
+    text-decoration: none;
+    border: 3px double black;
+    border-radius: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 8px;
+    color: #0f0b0b;
+}
+
+.button:hover{
+    background-color: aliceblue;
+}
+
+@media screen and (max-width: 760px){
+    .header{
+        width: 100%;
+    }
+    .web-title{
+        color: yellow;
+        font-size: 20px;
+    }
+    .link-menu{
+        text-decoration: none;
+        color: yellow;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .animation{
+        width: 200px;
+        background-color:chocolate;
+        animation-name: welcome;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        transition: all;
+    }
+    .welcome-animation{
+        font-size: 20px;
+    }
+    @keyframes welcome {
+        0%{transform: translateX(0px);}
+        50%{transform: translateX(180px);}
+        100%{transform: translateX(0px);}
+    }
+    .quote-area{
+            width: 350px;
+            height: 400px;
+            background-color: rgb(157, 196, 231, 1);
+            margin: auto;
+            border-radius: 30px;
+            border-top: 10px solid red;
+            border-right: 10px solid blue;
+            border-bottom: 10px solid orangered;
+            border-left: 10px solid green;
+            animation-name: quote;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            transition: all;
+    }
+    span{
+        font-size: 25px;
+    }
+    .container{
+        width: fit-content;
+        height: fit-content;
+    }
+}

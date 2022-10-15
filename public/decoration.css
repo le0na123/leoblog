@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Calibri;
+}
+
+#header{
+    margin: auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #3F5576;
+    text-align: center;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+    font-size: 100px;
+    
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+}
+
+@media screen and (max-width: 769px){
+    h1{
+        font-size: 50px;
+    }
+
+    .logo{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.container-fluid{
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar-brand{
+    padding: 0px 50px;
+}
+
+.navbar-brand:hover{
+    background-color:darkgrey;
+    transition: all 0.5s;
+    font-weight: bold;
+}
+
+#wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin-bottom: 20px
+}
+
+.card:hover{
+    transform:scale(1.03);
+    transition: all 0.3s;
+}
+
+.card-title{
+    font-weight: bold;
+}
+
+
